@@ -1,62 +1,68 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Todolist
 
-> Description the project.
+## Description
+
+This is an awesome application that allows users to save/add list of tasks.
 
 
-## Built With
+## Build With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Editor : Visual studio code
 
-## Live Demo (if available)
+- Languages
 
-[Live Demo Link](https://livedemo.com)
+  - [ ] HTML
+  - [ ] CSS
+  - [ ] JavaScript
+
+- Terminologies
+  - [ ] Github
+  - [ ] Webpack
+  - [ ] Linters
+  - [ ] WebHint
+  - [ ] Stylelint
+  - [ ] ESlint
+
+## Live Demo 
+
+[Live Demo Link](https://htetaungkyaw71.github.io/Todolist/) 
+
+<!-- ## Link to Presentation on this Project
+
+[See Presentation]() -->
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+step 1:
+Clone this repo locally using git in the command line and the following command
 
+```
+git clone git@github.com:Htetaungkyaw71/Todolist.git
+```
 
-To get a local copy up and running follow these simple example steps.
+Alternatively, you can just download the complete zip file and extract the folder in your directory
 
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
+Step 2:
+Copy All Project files and run using VSCODE. HTML can be viewed in browser.
 
 
 
-## Authors
+## Author 1
 
-👤 **Author1**
+👤 **Htetaungkyaw**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/Htetaungkyaw71)
+- Twitter: [@twitterhandle](https://twitter.com/htetaun91907337)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/htet-aung-kyaw-9a77271a7/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Htetaungkyaw71/Todolist/issues).
 
 ## Show your support
 
@@ -64,12 +70,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- ### Original design idea by **Cindy Shin in Behance**, in association with the Creative Commons [license](./CC.md) of the design.
 
 ## 📝 License
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+This project is [MIT](MIT.md) licensed.
