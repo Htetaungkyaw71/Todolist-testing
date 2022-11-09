@@ -1,7 +1,7 @@
 /* eslint-disable import/extensions */
 import './style.css';
 import {
-  render, add, checkLocalStorage, tasks, ChangeEdit, removeDom, clearAll,
+  render, add, checkLocalStorage, tasks, ChangeEdit, removeDom, clearAll, updateLocalStorage,
 } from './script.js';
 import drag from './drag.js';
 import checkbox from './complete.js';
@@ -13,12 +13,19 @@ import '@fortawesome/fontawesome-free/js/brands';
 document.getElementById('addForm').onsubmit = (e) => {
   e.preventDefault();
   const { value } = e.target.task;
-  add({
+  const task = {
     id: Date.now().toString(),
     description: value,
     complete: false,
     index: tasks.length,
-  });
+  };
+  add(task);
+  render(task);
+  updateLocalStorage();
+  ChangeEdit();
+  removeDom();
+  checkbox();
+  drag();
   e.target.task.value = '';
 };
 

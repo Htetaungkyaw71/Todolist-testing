@@ -1,9 +1,6 @@
 /* eslint-disable import/no-cycle */
 // eslint-disable-next-line import/no-cycle
 import checkbox from './complete.js';
-import drag from './drag.js';
-
-const list = document.querySelector('.list-item');
 
 // eslint-disable-next-line import/no-mutable-exports
 let tasks = [];
@@ -24,7 +21,6 @@ const remove = (id) => {
     newtasks.push({ ...task, index });
   });
   tasks = newtasks;
-  updateLocalStorage();
 };
 
 const checkLocalStorage = () => {
@@ -40,12 +36,14 @@ const removeDom = () => {
     btn.onclick = () => {
       const parentDiv = btn.parentElement.parentElement;
       remove(parentDiv.id);
+      updateLocalStorage();
       parentDiv.remove();
     };
   });
 };
 
 const render = (task) => {
+  const list = document.querySelector('.list-item');
   const div = document.createElement('div');
   const li = document.createElement('li');
   div.innerHTML = `
@@ -135,12 +133,6 @@ const clearAll = () => {
 
 const add = (task) => {
   tasks.push(task);
-  updateLocalStorage();
-  render(task);
-  ChangeEdit();
-  removeDom();
-  checkbox();
-  drag();
 };
 
 export {
@@ -152,4 +144,5 @@ export {
   ChangeEdit,
   removeDom,
   getTask,
+  remove,
 };
