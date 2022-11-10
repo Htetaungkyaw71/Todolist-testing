@@ -4,7 +4,7 @@ import {
   render, add, checkLocalStorage, tasks, ChangeEdit, removeDom, clearAll, updateLocalStorage,
 } from './script.js';
 import drag from './drag.js';
-import checkbox from './complete.js';
+import { checkbox } from './complete.js';
 import '@fortawesome/fontawesome-free/js/fontawesome';
 import '@fortawesome/fontawesome-free/js/solid';
 import '@fortawesome/fontawesome-free/js/regular';
@@ -20,8 +20,8 @@ document.getElementById('addForm').onsubmit = (e) => {
     index: tasks.length,
   };
   add(task);
-  render(task);
   updateLocalStorage();
+  render(task);
   ChangeEdit();
   removeDom();
   checkbox();

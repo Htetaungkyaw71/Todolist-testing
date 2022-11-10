@@ -1,13 +1,12 @@
 // eslint-disable-next-line import/no-cycle
 import { getTask, updateLocalStorage } from './script.js';
 
-const checking = (bool, id) => {
+export const checking = (bool, id) => {
   const task = getTask(id);
   task.complete = bool;
-  updateLocalStorage();
 };
 
-const checkbox = () => {
+export const checkbox = () => {
   document.querySelectorAll('.check').forEach((check) => {
     const h3 = check.nextElementSibling;
     const parent = check.parentElement.parentElement;
@@ -25,13 +24,12 @@ const checkbox = () => {
       if (check.checked === true) {
         h3.classList.add('select');
         checking(true, parent.id);
+        updateLocalStorage();
       } else {
         h3.classList.remove('select');
         checking(false, parent.id);
+        updateLocalStorage();
       }
     };
   });
 };
-
-// eslint-disable-next-line import/prefer-default-export
-export default checkbox;
